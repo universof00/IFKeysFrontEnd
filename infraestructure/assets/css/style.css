@@ -1,1 +1,137 @@
 /*Em breve as cores do projeto*/
+/* =========================================
+   PALETA DE CORES
+   ========================================= */
+
+:root {
+
+    /* Azul */
+    --azul: #3B82F6;
+    --azul-hover: #60A5FA;
+    --azul-escuro: #1D4ED8;
+    --azul-claro: #2563EB;
+
+    /* Fundos */
+    --fundo: #0B1120;
+    --superficie: #111827;
+    --card: #172033;
+    --destaque: #1E3A8A;
+
+    /* Textos */
+    --texto: #F8FAFC;
+    --texto-secundario: #94A3B8;
+
+    /* Borda */
+    --borda: #263449;
+
+    /* Estados */
+    --sucesso: #22C55E;
+    --atencao: #FBBF24;
+    --erro: #EF4444;
+}
+
+
+body {
+    margin: 0;
+    padding: 40px;
+
+    font-family: Arial, sans-serif;
+
+    background: var(--fundo);
+    color: var(--texto);
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+
+.paleta {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(180px, 1fr));
+
+    gap: 20px;
+}
+
+.cor {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 12px;
+
+    background: var(--superficie);
+
+    border: 1px solid var(--borda);
+
+    border-radius: 10px;
+}
+
+.quadrado {
+    width: 50px;
+    height: 50px;
+
+    flex-shrink: 0;
+
+    border-radius: 8px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.azul {
+    background: var(--azul);
+}
+
+.azul-hover {
+    background: var(--azul-hover);
+}
+
+.azul-escuro {
+    background: var(--azul-escuro);
+}
+
+.azul-claro {
+    background: var(--azul-claro);
+}
+
+.fundo {
+    background: var(--fundo);
+}
+
+.superficie {
+    background: var(--superficie);
+}
+
+.card {
+    background: var(--card);
+}
+
+.destaque {
+    background: var(--destaque);
+}
+
+.texto {
+    background: var(--texto);
+}
+
+.texto-secundario {
+    background: var(--texto-secundario);
+}
+
+.borda {
+    background: var(--borda);
+}
+
+.sucesso {
+    background: var(--sucesso);
+}
+
+.atencao {
+    background: var(--atencao);
+}
+
+.erro {
+    background: var(--erro);
+}
