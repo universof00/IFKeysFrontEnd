@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login - Sistema de Cadastro</title>
+  <link rel="stylesheet" href="../assets/css/adm-login.css">
+  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="login-wrap">
+    <div class="card">
+      <h1>Entrar</h1>
+      <p class="subtitle">Informe seus dados para acessar o painel ADM</p>
+
+      <form action="adm.html" method="get">
+
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+        </div>
+
+        <div class="campo">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" placeholder="Mínimo 6 caracteres" required minlength="6">
+        </div>
+
+        <div class="acoes-form">
+          <button type="submit" class="btn btn-primary">
+            Entrar
+          </button>
+
+          <button type="reset" class="btn btn-secondary">
+            Limpar
+          </button>
+        </div>
+
+      </form>
+
+      <a href="index.html" class="voltar-link">
+        ← Voltar para o início
+      </a>
+    </div>
+  </div>
+</body>
+</html>
